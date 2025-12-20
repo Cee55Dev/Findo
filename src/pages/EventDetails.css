@@ -1,0 +1,50 @@
+.event-details{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+}
+.event-info{
+    display:flex;
+    flex-direction: row;
+    
+}
+.event-image{
+    object-fit: cover;
+    width:100%;
+    height: 100vh;
+}
+.event-content{
+    padding:10px;
+    border-radius: 20px;
+    background-color: black;
+    fill-opacity: 70%;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    align-content: center;
+    position: absolute;
+    gap:20px;
+    top:20%;
+    color:rgb(237, 236, 238);
+    font-size:1.5rem;
+    flex-direction: column;
+}
+.event-content h1 , p  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin: 0;
+}
+.buy-ticket{
+    position: absolute;
+    font-weight:600;
+    left:50%;
+    top:80%;
+    width:200px;
+    color:White;
+    padding:20px;
+    background: rgb(21, 140, 200);
+    border-radius: 20px;
+    border:none;
+
+}

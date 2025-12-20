@@ -1,0 +1,10 @@
+.feed-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two cards side by side */
+    gap: 10px;
+}
+
+.feed-card {
+    height:200px;
+    border-radius: 0;
+}

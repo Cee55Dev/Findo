@@ -1,0 +1,39 @@
+
+.slider-container::-webkit-scrollbar {
+  display: none;
+}
+.slider-container {
+  display: flex;
+  gap: 1rem;           /* space between cards */
+  overflow-x: auto;    /* horizontal scroll */
+  padding: 8px 0;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+}
+
+.slider-container::-webkit-scrollbar {
+  height: 8px;         /* scrollbar height */
+}
+
+.slider-container::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+
+.slider-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Optional: make cards not shrink */
+/*.slider-container > * {
+  flex: 0 0 auto;      /* prevent shrinking */
+
+.slider-card {
+  width: 200px;    /* card width */
+  border-radius: 0px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background-color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+}

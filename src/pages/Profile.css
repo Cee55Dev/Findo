@@ -1,0 +1,28 @@
+.Page{
+    height:100vh;
+}
+.content{
+    display: flex;
+    margin-top:20px;
+    flex-direction: column;
+    gap:5px;
+}
+.panel{
+    border-bottom: 0.5px solid black;
+    border-radius: 1px;
+}
+.Profile-Actions{
+    display:flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap:40px;
+    align-content: center;
+}
+.Log-In{
+    color:rgb(250, 247, 247);
+    padding:15px;
+    border:none;
+    background-color: black;
+    border-radius: 15px;
+    width:70px;
+}

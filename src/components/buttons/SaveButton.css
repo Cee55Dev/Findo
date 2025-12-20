@@ -1,0 +1,12 @@
+
+.save-icon {
+  position: absolute;
+  top:2px;      /* distance from top */
+  right: 8px;    /* distance from right */
+  color: white;  /* icon color */
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.4); /* optional dark circle behind icon */
+  border-radius: 50%;
+  padding: 4px;
+}

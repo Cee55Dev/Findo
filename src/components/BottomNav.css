@@ -1,0 +1,33 @@
+.bottom-nav{
+  position: fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  height:65px;
+  background: #ffffff;
+  border-top: 1px solid #e8e8e8;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item{
+  background: none;
+  border:none;
+  flex:1;
+  padding:10px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon{
+  padding:15px;
+  font-size: 26px;
+  color:#0e0c0c;
+}
+
+.nav-item.active .icon{
+  color:#24ade7;
+  border-bottom: 1px solid blue;
+
+}

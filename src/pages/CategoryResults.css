@@ -1,0 +1,74 @@
+.category-results-page {
+  padding: 20px;
+}
+
+.category-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.spots-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* two cards side by side */
+  gap: 10px;
+}
+
+.spot-card {
+  position: relative;
+  cursor: pointer;
+  height:200px;
+  border:0;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.spot-card:hover {
+  transform: scale(1.02);
+}
+
+.spot-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Text overlay on top of image */
+.spot-name-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(8, 8, 17, 0.6);
+  font-weight: 600;
+  padding: 8px;
+  text-align: center;
+  z-index: 2;
+}
+.cat-bio{ 
+  display: none;
+  font-size:0.6rem;
+  text-align: left;
+  font-weight:200;
+  color:rgb(6, 9, 11);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cat-spot-name{
+  display:-webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 1;
+  line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 1px;
+  font-size: 1rem;
+  font-weight: 600;
+  color:rgb(8, 7, 7);
+  text-align:left;
+  margin-bottom: 2px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
