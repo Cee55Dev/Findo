@@ -1,6 +1,8 @@
 section{
     padding:0px;
-    margin:5px;
+}
+.home-content{
+    margin:0;
 }
 section h2{
     font-size: 1.3rem;
@@ -25,42 +27,6 @@ section h2{
     color:rgb(85, 20, 20);
     margin-bottom:12px ;
 }
-#Upcoming-Events{
-    color:black;
-    display: flex;
-    margin-bottom: 4rem;
-    flex-direction: column;
-    margin-top: 2px;
-    margin-left:30px;
-    margin-right:30px;
-    text-align: center;
-    align-content: center;
-}
-#Upcoming-Events h2{
-    color:rgb(10, 10, 12);
-    font-size: 2rem;
-
-}
-.events-slider{
-    display:flex;
-    justify-content: center;
-    gap:5px;
-}
-.Event{
-    display: flex;
-    flex-direction: column;
-}
-.event-image{
-    height:150px;
-    width:100px;
-  
-}
-.host-name{
-    position: absolute;
-    width:100px;
-    color:white;
-   
-}
 .h2p{
     display: flex;
     justify-content: space-between;
@@ -68,11 +34,42 @@ section h2{
 }
 .see-all{
    padding:10px;
-   font-size:0.7rem;
-   background-color: black;
+   font-size:0.9rem;
    font-weight: light;
    border:none;
-   color:rgb(241, 240, 244);
-   text-decoration: underline 1px solid blue;
+   color:rgb(4, 4, 179);
+}
+#home-content{
+    margin-top: 60px;
+}
+.Upcoming-Evvents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap:0px;
+}
+.Upcoming-Evvents h3{
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#4d0dac;
+    font-size: 1.4rem;
+}
+.h2p button {
+  background: none;          /* transparent background */
+  border: none;              /* no border */
+  color: #060908;            /* primary accent color */
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  padding: 4px 8px;
+}
+
+.h2p button:hover {            /* slightly darker on hover */
+  text-decoration: underline 1px solid blue;
 }
 

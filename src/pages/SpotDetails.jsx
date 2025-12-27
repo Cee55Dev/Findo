@@ -9,7 +9,10 @@ import upcomingEvents from "../data/UpcomingEvents";
 import "./SpotDetails.css";
 import UpcomingEvents from "../components/UpComingEvents";
 import SaveButton from "../components/buttons/SaveButton";
-import { BsPatchCheckFill } from "react-icons/bs";
+import { BsFillStarFill, BsPatchCheckFill } from "react-icons/bs";
+import { FiStar, FiInfo } from "react-icons/fi";
+import SpotDetailsTabs from "../components/spotDetailsTabs";
+import StarRating from "../components/stars";
 
 function SpotDetails() {
   const { spotSlug } = useParams();
@@ -59,58 +62,42 @@ function SpotDetails() {
 
         {/* Name and description */}
         <div className="spotDescription">
-            <div className="spot-Name">
-              <h2>{spot.name}</h2>
-              <div className="spotDetails-icon">
-                <BsPatchCheckFill /> 
-                <p>verified on .....</p>
-              <div/>
+          <div className="spot-info-top">
+            <div className="spot-info">
+                <h2>{spot.name}</h2>
+                <div className="tags">
+                   {Array.isArray(spot.category) && spot.category.map((cat, index) => (
+                    <span key={index} className="tag">{cat}</span>
+                       ))}
+                </div>
+
+                <StarRating rating={spot.rating} />
+
             </div>
-            <p className="spot-description">{spot.description}</p>
-            <p><strong>Rating:</strong> {spot.rating} ⭐</p>
-            <FollowButton />
-        </div>
-
-        {/* Events Slider */}
-       <div className="events-section">
-            <h3>Upcoming Events</h3>
-            <UpcomingEvents events={spotEvents}  />
-        </div>
-
+            <div className="spot-info">
+              <p className="status"><FiInfo />unclaimed</p>
+            </div>    
+             
+          </div>
+        </div>           
         {/* Spot details section */}
-        <div className="spot-details-section">
-          <p><strong>Address:</strong> {spot.address}</p>
-          <p><strong>Phone:</strong> {spot.phone}</p>
-          <p><strong>Hours:</strong> {spot.hours}</p>
-          <p><strong>Website:</strong> {spot.website}</p>
-          {spot.menu.length > 0 && (
-            <div>
-              <h3>Menu</h3>
-              <ul>
-                {spot.menu.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-        
+        <SpotDetailsTabs />
 
-        {/* Buttons */}
-        <div className="spot-buttons">
-          <button className="book-button">BOOK A RIDE </button>
-          <button className="direction-button">DIRECTIONS</button>
+        <div className="Events-section">
+          <h3>UPCOMING EVENTS !</h3>
+          <div className="events-slider">
+             <UpcomingEvents  events={spotEvents}/>
+          </div>
         </div>
-        </div>
-        </div>
+        
         <div className="Similar-spots-section">
             <h2>Similar Spots</h2>
             <div className="Similar-section">
              <Slider data={similar} title="Similar Spots"/>
             </div>
         </div>
-      
-    </div>
-  ); 
+     </div> 
+  );
 }
 
 export default SpotDetails;

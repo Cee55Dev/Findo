@@ -2,24 +2,24 @@
 const upcomingEvents = [
   { 
     id: 0,
-    spotSlug: "leovilla", // Saints 'n' Sinners
-    name: "Opening Party",
-    slug: "opening-party",
-    image: "/assets/pictures/Event6.jpg",
-    altText: "Opening Party",
-    date: "2025-11-20",
-    description: "Celebrate the grand opening with drinks and music",
+    spotSlug: "market-at-queens", // Saints 'n' Sinners
+    name: "Market at Queens",
+    slug: "market-at-queens",
+    image: "/assets/pictures/eventMarketAtQueens.jpg",
+    altText: "Market at Queens",
+    date:"Monthly event on Sundays",
+    description: "Fine Food & Drinks Market happening once a month on Sundays at QOH,1 Hurworth Rd. 1130am-close Gate entry is 5USD adults.",
     type: "event"
   },
   {
     id: 1,
-    spotSlug: "leovilla", // The Q Bar
-    name: "Music Night",
-    slug: "music-night",
-    image: "/assets/pictures/Event5.jpg",
-    altText: "Music Night",
+    spotSlug: "clubzone", // The Q Bar
+    name: "Traditional Friday",
+    slug: "traditional-friday",
+    image: "/assets/pictures/eventClubZone.jpg",
+    altText: "Traditional Friday",
     date: "2025-12-05",
-    description: "Live music and drinks at The Q Bar",
+    description: "Live music and drinks at ClubZone",
     type : "event"
   },
   {
@@ -27,7 +27,7 @@ const upcomingEvents = [
     spotSlug: "leovilla", // Tin Roof Bucket Bar and Bistro
     name: "Food Festival",
     slug:"food-festival",
-    image: "/assets/pictures/Event4.jpg",
+    image: "/assets/pictures/eventHKD.jpg",
     altText: "Food Festival",
     date: "2025-12-10",
     description: "Tasting various cuisines at Tin Roof Bucket Bar",
@@ -35,16 +35,15 @@ const upcomingEvents = [
   },
   {
     id: 3,
-    spotSlug: 0, // Saints 'n' Sinners
+    spotSlug: "leovilla", // The Social House
     name: "Cocktail Evening",
     slug: "cocktail-evening",
-    image: "/assets/pictures/Event3.jpg",
+    image: "/assets/pictures/Event1.jpg",
     altText: "Cocktail Evening",
     date: "2025-12-15",
-    description: "Exclusive cocktails and networking",
-    type:"event"
-  },
-  
+    description: "Enjoy a selection of cocktails at The Social House",
+    type: "event"
+  }
 ];
 
 export default upcomingEvents;

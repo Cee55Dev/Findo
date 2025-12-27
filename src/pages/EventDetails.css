@@ -1,5 +1,6 @@
 .event-details{
-    height:100vh;
+    position: fixed;
+    height:90vh;
     display:flex;
     flex-direction: column;
 }
@@ -15,8 +16,7 @@
 }
 .event-content{
     padding:10px;
-    border-radius: 20px;
-    background-color: black;
+    background-color: rgb(27, 30, 30);
     fill-opacity: 70%;
     margin:0;
     display: flex;
@@ -24,9 +24,9 @@
     align-items:flex-start;
     align-content: center;
     position: absolute;
-    gap:20px;
+    gap:10px;
     top:20%;
-    color:rgb(237, 236, 238);
+    color:rgb(220, 228, 223);
     font-size:1.5rem;
     flex-direction: column;
 }
@@ -39,12 +39,60 @@
     position: absolute;
     font-weight:600;
     left:50%;
-    top:80%;
+    top:70%;
     width:200px;
     color:White;
+    font-size:1rem;
     padding:20px;
     background: rgb(21, 140, 200);
     border-radius: 20px;
     border:none;
+}
+.event-details {
+  position: relative;
+}
 
+.event-info {
+  position: relative;
+}
+
+.info-btn {
+  position: absolute;
+  top: 60px;
+  right:10px; /* adjust so it doesn’t overlap Buy Tickets button */
+  background: rgba(221, 218, 218, 0.6);
+  color: #050505;
+  border: none;
+  border-radius: 50%;
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.close-btn{
+    position: absolute;
+    top:2px;
+    right:2px;
+    background:none;
+    border:none;
+    color:rgb(243, 240, 240);
+}
+.event-name{
+    color:white;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+}
+.event-datee{
+    color:rgb(76, 76, 82)
+}
+.event-date{
+    color:white;
+}
+.event-description{
+    margin-top: 10px;
+    color:white;
+    font-size: 1.5rem;
 }

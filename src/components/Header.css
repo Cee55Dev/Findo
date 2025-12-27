@@ -1,60 +1,141 @@
+/* --- Header Container --- */
 .header {
   display: flex;
   flex-direction: column;
-  padding: 10px;
-}
-.header-content{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+  z-index: 100;
+  box-sizing: border-box;
 }
 
-.user-corner {
-  width:50%;
+/* --- Top Row: User + Right icons --- */
+.header-content {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  margin: 0;
+  flex-wrap: nowrap;
 }
-.p-holder{
+
+/* --- Left: User Info --- */
+.user-corner {
   display: flex;
   align-items: center;
-  align-content: center;
-  justify-content: center;
-  gap: 5px;
+  gap: 10px;
+  flex-shrink: 1;
+  min-width: 0; /* important for text truncation */
 }
 
 .user-icon {
-  border:1px solid red;
   width: 40px;
-  border-radius: 10%;
-  margin-right: 10px;
-  border:1px solid blue;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
 
+.username {
+  font-size: 16px; /* >=16px prevents iOS zoom */
+  font-weight: 500;
+  color: #111;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .location-info {
   display: flex;
   flex-direction: column;
-  align-items:start;
-
-}
-.username{
-  margin:3px;
-}
-.current-location-text{
-  margin:3px;
   font-size: 14px;
-  color: rgb(4, 4, 7);
+  color: #555;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
+/* --- Right: Hamburger + Notifications --- */
+.header-right {
+  display: flex;
+  margin-right: 1px;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
 }
-.search-bar input { 
-  border:none;
-  width: 90%;
-  font-size: 16px;   /* <-- this stops mobile zoom */
-  padding: 10px;
+
+.menu-btn {
+  z-index: 10001;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-icon {
+  border: none;
+  font-size: 24px;
+  position: relative;
+}
+
+/* Remove focus outline for button and icons */
+.menu-btn,
+.notification-icon,
+.menu-btn * ,
+.notification-icon * {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.menu-btn:focus,
+.notification-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* --- Search Bar --- */
+.search-bar {
+  width: 100%;
+  font-size: 16px; /* >=16px to prevent mobile zoom */
   margin-top: 10px;
-  width: 90%;
-  border-radius: 10px;
+  display: flex;
+  justify-content: center;
 }
-.notification-icon{
-  margin:10px;
+
+.search-bar input {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 16px; /* consistent with container */
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-bar input:focus {
+  border-color: #0f172a; /* primary color focus */
+  box-shadow: 0 0 5px rgba(15,23,42,0.2);
+}
+
+/* --- Responsive --- */
+@media (max-width: 480px) {
+  .menu-btn {
+    font-size: 24px;
+    z-index: 101;
+  }
+
+  .search-bar input {
+    font-size: 16px; /* keep consistent, prevent zoom */
+    padding: 8px;
+  }
+
+  .username, .location-info {
+    font-size: 14px;
+  }
 }

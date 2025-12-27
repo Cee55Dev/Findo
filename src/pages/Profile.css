@@ -1,28 +1,47 @@
-.Page{
-    height:100vh;
+.Page {
+  padding: 1.5rem;
+  background-color: #f9fafb;
+  min-height: 100vh;
 }
-.content{
-    display: flex;
-    margin-top:20px;
-    flex-direction: column;
-    gap:5px;
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 2rem;
 }
-.panel{
-    border-bottom: 0.5px solid black;
-    border-radius: 1px;
+
+.menu-content-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-.Profile-Actions{
-    display:flex;
-    justify-content: center;
-    margin-top: 100px;
-    gap:40px;
-    align-content: center;
+
+.menu-opt {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #0f172a;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
-.Log-In{
-    color:rgb(250, 247, 247);
-    padding:15px;
-    border:none;
-    background-color: black;
-    border-radius: 15px;
-    width:70px;
+
+.menu-opt:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background: #0f172a;
+  color: white;
+}
+
+.menu-opt svg {
+  font-size: 1.5rem;
+}
+
+.menu-opt:hover svg {
+  color: white;
 }

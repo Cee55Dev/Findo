@@ -1,9 +1,64 @@
-.cat-name {
+.discover-page {
+  padding: 1.5rem;
+  background-color: #f9fafb; /* light neutral background */
+  min-height: 100vh;
+}
+
+.discover-title {
+  color: #0f172a; /* primary color */
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.category-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
   display: flex;
-  margin-bottom: 1rem;
-  margin-left:5px;
-  font-size:1.2rem;
-  padding:3px;
-  border-bottom: 1px solid rgb(36 173 231);
-  width:fit-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background: #0f172a;
+  color: white;
+}
+
+.cat-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+}
+
+.category-card:hover .cat-icon {
+  color: white;
+}
+
+.cat-name {
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  color: #0f172a;
+}
+
+.category-card:hover .cat-name {
+  color: white;
+}
+@media (max-width: 600px) {
+  .categories-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
 }
