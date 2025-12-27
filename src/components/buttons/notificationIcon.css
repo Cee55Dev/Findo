@@ -1,0 +1,28 @@
+.notification-wrapper {
+  position: relative;
+}
+
+.notification-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.notification-panel {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 260px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+.notification-item {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+  color: #333;
+}
