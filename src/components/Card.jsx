@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaMapMarkerAlt } from "react-icons/fa"; // Placeholder icon
 import StarRating from "./stars";
 import SaveButton from "./buttons/SaveButton";
 import "./Card.css";
@@ -30,18 +31,28 @@ function Card({
     setSaved(!saved);
   };
 
+  // Determine the image URL (first in array or single string)
+  const imageUrl = Array.isArray(image) ? image[0] : image;
+
   return (
     <Link to={linkTo} className="card-link">
       <div className={`card ${type === "recommended" ? "recommended-card" : ""}`}>
-        {/* Card Image */}
         <div className="card-image-wrapper">
-          <img
-            src={image || "https://via.placeholder.com/200x140"}
-            alt={altText || name || "Card"}
-            loading="lazy"
-            onLoad={(e) => e.target.classList.add("loaded")}
-            className="card-image"
-          />
+          {/* Card Image or Placeholder */}
+          {imageUrl ? (
+            <img
+              src={imageUrl}
+              alt={altText || name || "Card"}
+              loading="lazy"
+              onError={(e) => e.target.style.display = "none"} // hide broken image
+              onLoad={(e) => e.target.classList.add("loaded")}
+              className="card-image"
+            />
+          ) : (
+            <div className="placeholder-icon">
+              <FaMapMarkerAlt size={40} color="#888" />
+            </div>
+          )}
 
           {/* Save Icon */}
           <SaveButton saved={saved} onClick={toggleSave} />
@@ -53,23 +64,19 @@ function Card({
               {name && <h3 className="card-name">{name}</h3>}
 
               {/* Categories */}
-              {Array.isArray(categories) && categories.length > 0 && (
+              {categories.length > 0 && (
                 <div className="card-categories">
                   {categories.map((cat, i) => (
-                    <span key={i} className="category-pill">
-                      {cat}
-                    </span>
+                    <span key={i} className="category-pill">{cat}</span>
                   ))}
                 </div>
               )}
 
               {/* Tags */}
-              {Array.isArray(tags) && tags.length > 0 && (
+              {tags.length > 0 && (
                 <div className="card-tags">
                   {tags.map((tag, i) => (
-                    <span key={i} className="tag-pill">
-                      {tag}
-                    </span>
+                    <span key={i} className="tag-pill">{tag}</span>
                   ))}
                 </div>
               )}
@@ -87,9 +94,9 @@ function Card({
               )}
 
               {/* Description */}
-              { showDescription && description && (
-                <p className="card-description">{description}</p> 
-                )}
+              {showDescription && description && (
+                <p className="card-description">{description}</p>
+              )}
             </div>
           </div>
         </div>

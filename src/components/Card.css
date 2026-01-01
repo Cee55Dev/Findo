@@ -126,3 +126,10 @@
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
 }
+.placeholder-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px; /* same as card image height */
+  background-color: #f0f0f0;
+}

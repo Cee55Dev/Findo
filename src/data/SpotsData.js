@@ -3,7 +3,11 @@ export const spots = [
   {
     id: 0,
     name: "Saints and Sinners",
-    image: "/assets/pictures/imgSaintsandSinners.jpg",
+    image: [ 
+      "/assets/compressed/imgSaintsandSinners1.webp",
+      "/assets/compressed/imgSaintsandSinners2.webp",
+      "/assets/compressed/imgSaintsandSinners3.webp"
+    ],
     altText: "Saints and Sinners",
     slug:"saints-and-sinners",
     description: "Beautiful space to chill and enjoy a cold martini",
@@ -19,7 +23,11 @@ export const spots = [
   {
     id: 1,
     name: "Bakerloo Restaurant and Bar",
-    image:"/assets/pictures/imgBakerloo1.jpg",
+    image: [
+      "/assets/compressed/imgBakerloo1.webp",
+      "/assets/compressed/imgBakerloo2.webp",
+      "/assets/compressed/imgBakerloo3.webp"
+    ],
     altText: "Bakerloo Restaurant and Bar",
     slug:"bakerloo-restaurant-and-bar",
     description: "Sip | Savor | Socialize",
@@ -35,7 +43,11 @@ export const spots = [
   {
     id: 2,
     name: "Tin Roof Bucket Bar and Bistro",
-    image: "/assets/pictures/imgTinRoof1.jpg",
+    image: [
+      "/assets/compressed/imgTinRoof1.webp",
+      "/assets/compressed/imgTinRoof2.webp",
+      "/assets/compressed/imgTinRoof3.webp"
+    ],
     altText: "Tin Roof Bucket Bar and Bistro",
     slug: "tin-roof-bucket-bar-and-bistro",
     description: "Family-run pub with amazing food & drinks",
@@ -51,7 +63,11 @@ export const spots = [
   {
     id: 3,
     name: "The Centurion Pub and Grill",
-    image: "/assets/pictures/imgCenturion1.jpg",
+    image: [
+      "/assets/compressed/imgCenturion1.webp",
+      "/assets/compressed/imgCenturion2.webp",
+      "/assets/compressed/imgCenturion3.webp"
+    ],
     altText: "The Centurion Pub and Grill",
     slug: "the-centurion-pub-and-grill",
     description: "Vibrant atmosphere for sports and socializing",
@@ -67,7 +83,11 @@ export const spots = [
   {
     id: 4,
     name: "The Fire Pit",
-    image: "/assets/pictures/imgFirePit1.jpg",
+    image: [
+      "/assets/compressed/imgFirePit1.webp",
+      "/assets/compressed/imgFirePit2.webp",
+      "/assets/compressed/imgFirePit3.webp"
+    ],
     altText: "The Fire Pit",
     slug:"the-fire-pit",
     description:"Come for the food, stay for the vibes",
@@ -83,7 +103,11 @@ export const spots = [
   {
     id: 5,
     name: "CLUBZONE NIGHT CLUB",
-    image: "/assets/pictures/imgClubZone2.jpg",
+    image: [
+      "/assets/compressed/imgClubZone1.webp",
+      "/assets/compressed/imgClubZone2.webp",
+      "/assets/compressed/imgClubZone3.webp"
+    ],
     altText: "CLUBZONE NIGHT CLUB",
     slug:"clubzone-night-club",
     description:"Dance the night away with great beats",
@@ -99,7 +123,11 @@ export const spots = [
   {
     id: 6,
     name: "JONGWE CORNER BAR",
-    image: "/assets/pictures/imgJongweCorner.jpg",
+    image: [
+      "/assets/compressed/imgJongweCorner1.webp",
+      "/assets/compressed/imgJongweCorner2.webp",
+      "/assets/compressed/imgJongweCorner3.webp"
+    ],
     altText: "Jongwe Corner Bar",
     slug:"jongwe-corner-bar",
     description:"Outdoor seating with entertainment",
@@ -115,7 +143,11 @@ export const spots = [
   {
     id: 7,
     name: "Pariah State Avondale",
-    image: "/assets/pictures/imgPariahState1.jpg",
+    image: [
+      "/assets/compressed/imgPariahState1.webp",
+      "/assets/compressed/imgPariahState2.webp",
+      "/assets/compressed/imgPariahState3.webp"
+    ],
     altText: "Pariah State Avondale",
     slug:"pariah-state-avondale",
     description:"Kitchen | Cafe | Bar",
@@ -131,7 +163,11 @@ export const spots = [
   {
     id: 8,
     name: "Queen of Hearts Cafe",
-    image: "/assets/pictures/imgQueenofHearts1.jpg",
+    image: [
+      "/assets/compressed/imgQueenofHearts1.webp",
+      "/assets/compressed/imgQueenofHearts2.webp",
+      "/assets/compressed/imgQueenofHearts3.webp"
+    ],
     altText: "Queen of Hearts",
     slug:"queen-of-hearts-cafe",
     description:"Artisan coffee bar & Italian style breakfast & lunch",
@@ -147,7 +183,11 @@ export const spots = [
   {
     id: 9,
     name: "Leovilla Mexican Restaurant",
-    image: "/assets/pictures/imgLeoVilla2.jpg",
+    image: [
+      "/assets/compressed/imgLeoVilla1.webp",
+      "/assets/compressed/imgLeoVilla2.webp",
+      "/assets/compressed/imgLeoVilla3.webp"
+    ],
     altText: "Leovilla",
     slug:"leovilla-mexican-restaurant",
     description:"Treat every day like Taco Tuesday 🌮",
@@ -163,7 +203,11 @@ export const spots = [
   {
     id: 10,
     name: "The Kitchen",
-    image: "/assets/pictures/imgTheKitchen.jpg",
+    image: [
+      "/assets/compressed/imgTheKitchen1.webp",
+      "/assets/compressed/imgTheKitchen2.webp",
+      "/assets/compressed/imgTheKitchen3.webp"
+    ],
     altText: "The Kitchen",
     slug:"the-kitchen",
     description:"Serves great cocktails & light meals",
@@ -179,7 +223,11 @@ export const spots = [
   {
     id: 11,
     name: "Sorrel Restaurant and Lounge",
-    image: "/assets/pictures/imgSorrel2.jpg",
+    image: [
+      "/assets/compressed/imgSorrel1.webp",
+      "/assets/compressed/imgSorrel2.webp",
+      "/assets/compressed/imgSorrel3.webp"
+    ],
     altText: "Sorrel Restaurant and Lounge",
     slug:"sorrel-restaurant-and-lounge",
     description:"Outdoor seating · Fireplace",
@@ -195,7 +243,11 @@ export const spots = [
   {
     id: 12,
     name: "Salt Zimbabwe",
-    image: "/assets/pictures/imgSalt.jpg",
+    image: [
+      "/assets/compressed/imgSalt1.webp",
+      "/assets/compressed/imgSalt2.webp",
+      "/assets/compressed/imgSalt3.webp"
+    ],
     altText: "Salt Zimbabwe",
     slug:"salt-zimbabwe",
     description:"Enjoy American classics & Mediterranean delights",
@@ -211,7 +263,11 @@ export const spots = [
   {
     id: 13,
     name: "ChopChopZim",
-    image: "/assets/pictures/imgChopChop1.jpg",
+    image: [
+      "/assets/compressed/imgChopChop1.webp",
+      "/assets/compressed/imgChopChop2.webp",
+      "/assets/compressed/imgChopChop3.webp"
+    ],
     altText: "ChopChopZim",
     slug:"chopchopzim",
     description:"Steakhouse for the true carnivore",
@@ -227,7 +283,11 @@ export const spots = [
   {
     id: 14,
     name: "HipHipSip Zimbabwe",
-    image: "/assets/pictures/imgHipHipSip2.jpg",
+    image: [
+      "/assets/compressed/imgHipHipSip1.webp",
+      "/assets/compressed/imgHipHipSip2.webp",
+      "/assets/compressed/imgHipHipSip3.webp"
+    ],
     altText: "HipHipSip Zimbabwe",
     slug:"hiphipsip-zimbabwe",
     description:"Where every sip feels like a celebration",
@@ -243,7 +303,11 @@ export const spots = [
   {
     id: 15,
     name: "TreeHouse Lodge",
-    image: "/assets/pictures/imgTreeHouseLodge1.jpg",
+    image: [
+      "/assets/compressed/imgTreeHouseLodge1.webp",
+      "/assets/compressed/imgTreeHouseLodge2.webp",
+      "/assets/compressed/imgTreeHouseLodge3.webp"
+    ],
     altText: "TreeHouse Lodge",
     slug:"treehouse-lodge",
     description:"Beautiful lodge overlooking Chimanimani National Park",
@@ -259,7 +323,11 @@ export const spots = [
   {
     id: 16,
     name: "The Great Cafe and Grill",
-    image: "/assets/pictures/imgGreatCafe.jpg",
+    image: [
+      "/assets/compressed/imgGreatCafe1.webp",
+      "/assets/compressed/imgGreatCafe2.webp",
+      "/assets/compressed/imgGreatCafe3.webp"
+    ],
     altText: "The Great Cafe and Grill",
     slug:"the-great-cafe-and-grill",
     description:"Good food, good mood",
@@ -275,7 +343,11 @@ export const spots = [
     {
     id: 17,
     name: "Maki Sushi Restaurant",
-    image: "/assets/pictures/imgMakiSushi.jpg",
+    image: [
+      "/assets/compressed/imgMakiSushi1.webp",
+      "/assets/compressed/imgMakiSushi2.webp",
+      "/assets/compressed/imgMakiSushi3.webp"
+    ],
     altText: "Maki Sushi Harare - Sushi Restaurant",
     slug:"maki-sushi-restaurant",
     description:"Freshest sushi in town with authentic Japanese flavors",
@@ -291,7 +363,11 @@ export const spots = [
   {
     id: 18,
     name: "Manna Resorts",
-    image: "/assets/pictures/imgMannaResorts1.jpg",
+    image: [
+      "/assets/compressed/imgMannaResorts1.webp",
+      "/assets/compressed/imgMannaResorts2.webp",
+      "/assets/compressed/imgMannaResorts3.webp"
+    ],
     altText: "Manna Resorts",
     slug:"manna-resorts",
     description:"4-star resort for leisure and business",
@@ -307,7 +383,11 @@ export const spots = [
   {
     id: 19,
     name: "Rainbow Towers Hotel And Conference Centre",
-    image: "/assets/pictures/imgRainbowTowers1.jpg",
+    image: [
+      "/assets/compressed/imgRainbowTowers1.webp",
+      "/assets/compressed/imgRainbowTowers2.webp",
+      "/assets/compressed/imgRainbowTowers3.webp"
+    ],
     altText: "Rainbow Towers Hotel & Conference Centre",
     slug:"rainbow-towers-hotel-and-conference-centre",
     description:"Luxury hotel with stunning city views",
@@ -323,7 +403,11 @@ export const spots = [
   {
     id: 20,
     name: "Cresta Lodge Harare",
-    image: "/assets/pictures/imgCrestaLodge1.jpg",
+    image: [
+      "/assets/compressed/imgCrestaLodge1.webp",
+      "/assets/compressed/imgCrestaLodge2.webp",
+      "/assets/compressed/imgCrestaLodge3.webp"
+    ],
     altText: "Cresta Lodge Harare",
     slug:"cresta-lodge-harare",
     description:"Tranquil surroundings perfect for relaxation",
@@ -339,7 +423,11 @@ export const spots = [
   {
     id: 21,
     name: "Holiday Inn Harare",
-    image: "/assets/pictures/imgHolidayInn1.jpg",
+    image: [
+      "/assets/compressed/imgHolidayInn1.webp",
+      "/assets/compressed/imgHolidayInn2.webp",
+      "/assets/compressed/imgHolidayInn3.webp"
+    ],
     altText: "Holiday Inn Harare",
     slug:"holiday-inn-harare",
     description:"Convenience and comfort for business and leisure travelers",
@@ -355,7 +443,11 @@ export const spots = [
   {
     id: 22,
     name: "Bronte Hotel",
-    image: "/assets/pictures/imgBronte1.jpg",
+    image: [
+      "/assets/compressed/imgBronte1.webp",
+      "/assets/compressed/imgBronte2.webp",
+      "/assets/compressed/imgBronte3.webp"
+    ],
     altText: "Bronte Hotel",
     slug:"bronte-hotel",
     description:"Garden hotel with beautifully landscaped views",
@@ -371,7 +463,11 @@ export const spots = [
   {
     id: 23,
     name: "BistroVeldemeers",
-    image: "/assets/pictures/imgBistroVeldemeers1.jpg",
+    image: [
+      "/assets/compressed/imgBistroVeldemeers1.webp",
+      "/assets/compressed/imgBistroVeldemeers2.webp",
+      "/assets/compressed/imgBistroVeldemeers3.webp"
+    ],
     altText: "Bistro Veldemeers",
     slug:"bistroveldemeers",
     description:" talian Club",
@@ -387,7 +483,11 @@ export const spots = [
   {
     id: 24,
     name: "Willow Lodge",
-    image: "/assets/pictures/imgWillowLodge1.jpg",
+    image: [
+      "/assets/compressed/imgWillowLodge1.webp",
+      "/assets/compressed/imgWillowLodge2.webp",
+      "/assets/compressed/imgWillowLodge3.webp"
+    ],
     altText: "Willow Lodge",
     slug:"willow-lodge",
     description:"Exceptional accommodation and delicious food",
@@ -403,7 +503,11 @@ export const spots = [
   {
     id: 25,
     name: "New Ambassador Hotel",
-    image: "/assets/pictures/imgAmbassadorHotel1.jpg",
+    image: [
+      "/assets/compressed/imgAmbassadorHotel1.webp",
+      "/assets/compressed/imgAmbassadorHotel2.webp",
+      "/assets/compressed/imgAmbassadorHotel3.webp"
+    ],
     altText: "New Ambassador Hotel",
     slug:"new-ambassador-hotel",
     description:"Ideal business hotel in Harare CBD",
@@ -419,7 +523,11 @@ export const spots = [
   {
     id: 26,
     name: "Cresta Oasis Hotel",
-    image: "/assets/pictures/imgCrestaOasis3.jpg",
+    image: [
+      "/assets/compressed/imgCrestaOasis1.webp",
+      "/assets/compressed/imgCrestaOasis2.webp",
+      "/assets/compressed/imgCrestaOasis3.webp"
+    ],
     altText: "Cresta Oasis Hotel",
     slug:"cresta-oasis-hotel",
     description:"Experience city life and relaxation in one place",
@@ -435,7 +543,11 @@ export const spots = [
   {
     id: 27,
     name: "The Peech Boutique Hotel",
-    image: "/assets/pictures/imgPeech1.jpg",
+    image: [
+      "/assets/compressed/imgPeech1.webp",
+      "/assets/compressed/imgPeech2.webp",
+      "/assets/compressed/imgPeech3.webp"
+    ],
     altText: "The Peech Boutique Hotel",
     slug:"the-peech-boutique-hotel",
     description:"The Peech Boutique Hotel offers luxurious and elegant accommodation in Harare, Zimbabwe, ideal for both leisure and business travelers.",
@@ -451,7 +563,11 @@ export const spots = [
   {
     id: 28,
     name: "Sian Simba River Lodge",
-    image: "/assets/pictures/imgSianSimba.jpg",
+    image: [
+      "/assets/compressed/imgSianSimba1.webp",
+      "/assets/compressed/imgSianSimba2.webp",
+      "/assets/compressed/imgSianSimba3.webp"
+    ],
     altText: "Sian Simba River Lodge",
     slug:"sian-simba-river-lodge",
     description:"Right on the banks of the Zambezi River, perfect for nature lovers",
@@ -467,23 +583,31 @@ export const spots = [
     {
     id: 29,
     name: "The Smoke House",
-    image: "/assets/pictures/imgSMokeHouse.jpg",
+    image: [
+      "/assets/compressed/imgSmokeHouse1.webp",
+      "/assets/compressed/imgSmokeHouse2.webp",
+      "/assets/compressed/imgSmokeHouse3.webp"
+    ],
     altText: "The Smoke House",
     slug: "the-smoke-house",
-    description: "Cozy clinic with quick health services and friendly staff",
+    description: "SMoke House 🔥🔥🔥",
     rating: 4.2,
-    category: ["Clinic","Health","Wellness"],
-    tags: ["recommended","topRated","trusted"],
-    address: "Greenfields Shopping Centre, Harare",
-    phone: "+263 24 270 5800",
-    hours: ["24 hours"],
-    website: "https://cimas.co.zw",
+    category: ["Grill" , "Restaurant"],
+    tags: [""],
+    address: "",
+    phone: "",
+    hours: [""],
+    website: "",
     menu: [],
   },
   {
     id: 30,
     name: "Mountain Lakes Resort",
-    image: "/assets/pictures/imgMountainLakes2.jpg",
+    image: [
+      "/assets/compressed/imgMountainLakes1.webp",
+      "/assets/compressed/imgMountainLakes2.webp",
+      "/assets/compressed/imgMountainLakes3.webp"
+    ],
     altText: "Mountain Lakes Resort",
     slug: "mountain-lakes-resort",
     description: "Hidden luxury resort in the Eastern Highlands forests",
@@ -499,7 +623,11 @@ export const spots = [
   {
     id: 31,
     name: "Cafe Letina",
-    image: "/assets/pictures/imgCafeLetina.jpg",
+    image: [
+      "/assets/compressed/imgCafeLetina1.webp",
+      "/assets/compressed/imgCafeLetina2.webp",
+      "/assets/compressed/imgCafeLetina3.webp"
+    ],
     altText: "Cafe Letina",
     slug: "cafe-letina",
     description: "Authentic Ethiopian cuisine meets cozy cafe vibes",
@@ -515,7 +643,11 @@ export const spots = [
   {
     id: 32,
     name: "The Three Monkeys Harare",
-    image: "/assets/pictures/imgThreeMonkeys1.jpg",
+    image: [
+      "/assets/compressed/imgThreeMonkeys1.webp",
+      "/assets/compressed/imgThreeMonkeys2.webp",
+      "/assets/compressed/imgThreeMonkeys3.webp"
+    ],
     altText: "The Three Monkeys Harare",
     slug: "the-three-monkeys-harare",
     description: "Vibrant spot for food, drinks, and live entertainment",
@@ -531,7 +663,11 @@ export const spots = [
   {
     id: 33,
     name: "Fairy Cafe",
-    image: "/assets/pictures/imgFairyCafe.jpg",
+    image: [
+      "/assets/compressed/imgFairyCafe1.webp",
+      "/assets/compressed/imgFairyCafe2.webp",
+      "/assets/compressed/imgFairyCafe3.webp"
+    ],
     altText: "Fairy Cafe",
     slug: "fairy-cafe",
     description: "Premium cafe with desserts, coffee, and a magical vibe",
@@ -547,7 +683,11 @@ export const spots = [
   {
     id: 34,
     name: "Saints and Sinners Rooftop",
-    image: "/assets/pictures/imgSaintsRooftop.jpg",
+    image: [
+      "/assets/compressed/imgSaintsRooftop1.webp",
+      "/assets/compressed/imgSaintsRooftop2.webp",
+      "/assets/compressed/imgSaintsRooftop3.webp"
+    ],
     altText: "Saints and Sinners Rooftop",
     slug: "saints-and-sinners-rooftop",
     description: "Chill rooftop bar with great cocktails and vibes",
@@ -563,7 +703,11 @@ export const spots = [
   {
     id: 35,
     name: "Bakerloo Premium",
-    image: "/assets/pictures/imgBakerloo1.jpg",
+    image: [
+      "/assets/compressed/imgBakerloo1.webp",
+      "/assets/compressed/imgBakerloo2.webp",
+      "/assets/compressed/imgBakerloo3.webp"
+    ],
     altText: "Bakerloo Premium",
     slug: "bakerloo-premium",
     description: "Upscale dining with craft cocktails and beers",
@@ -579,7 +723,11 @@ export const spots = [
   {
     id: 36,
     name: "Tin Roof Bucket Bar & Bistro",
-    image: "/assets/pictures/imgTinRoof1.jpg",
+    image: [
+      "/assets/compressed/imgTinRoof1.webp",
+      "/assets/compressed/imgTinRoof2.webp",
+      "/assets/compressed/imgTinRoof3.webp"
+    ],
     altText: "Tin Roof Bucket Bar & Bistro",
     slug: "tin-roof-bucket-bar-bistro",
     description: "Family-run pub with delicious food & drinks",
@@ -595,7 +743,11 @@ export const spots = [
   {
     id: 37,
     name: "The Centurion Pub and Grill",
-    image: "/assets/pictures/imgCenturion1.jpg",
+    image: [
+      "/assets/compressed/imgCenturion1.webp",
+      "/assets/compressed/imgCenturion2.webp",
+      "/assets/compressed/imgCenturion3.webp"
+    ],
     altText: "The Centurion Pub and Grill",
     slug: "the-centurion-pub-and-grill",
     description: "Vibrant pub perfect for live sports and socialising",
@@ -611,7 +763,11 @@ export const spots = [
   {
     id: 38,
     name: "The Fire Pit Lounge",
-    image: "/assets/pictures/imgFirePit1.jpg",
+    image: [
+      "/assets/compressed/imgFirePit1.webp",
+      "/assets/compressed/imgFirePit2.webp",
+      "/assets/compressed/imgFirePit3.webp"
+    ],
     altText: "The Fire Pit Lounge",
     slug:"the-fire-pit-lounge",
     description:"Trendy lounge with excellent vibes and cocktails",
@@ -624,26 +780,15 @@ export const spots = [
     website:"none",
     menu:[],
   },
-  {
-    id: 39,
-    name: "ClubZone Night Club",
-    image: "/assets/pictures/imgClubZone2.jpg",
-    altText: "CLUBZONE NIGHT CLUB",
-    slug:"clubzone-night-club",
-    description:"High-energy nightclub with music, drinks, and VIP sections",
-    rating: 4.7,
-    category:["Bar","Nightclub","Lounge"],
-    tags:["recommended","topRated","trending"],
-    address:"Burombo Road, Harare",
-    phone:"078 652 5370",
-    hours:"24 hours",
-    website:"none",
-    menu:[],
-  },
+  
   {
     id: 40,
     name: "Jongwe Corner Bar",
-    image: "/assets/pictures/imgJongweCorner.jpg",
+    image: [
+      "/assets/compressed/imgJongweCorner1.webp",
+      "/assets/compressed/imgJongweCorner2.webp",
+      "/assets/compressed/imgJongweCorner3.webp"
+    ],
     altText: "Jongwe Corner Bar",
     slug:"jongwe-corner-bar",
     description:"Outdoor bar with entertainment and social vibes",
@@ -659,7 +804,11 @@ export const spots = [
   {
     id: 41,
     name: "Pariah State Avondale",
-    image: "/assets/pictures/imgPariahState1.jpg",
+    image: [
+      "/assets/compressed/imgPariahState1.webp",
+      "/assets/compressed/imgPariahState2.webp",
+      "/assets/compressed/imgPariahState3.webp"
+    ],
     altText: "Pariah State Avondale",
     slug:"pariah-state-avondale",
     description:"Trendy cafe-bar with drinks and bites",
@@ -675,7 +824,11 @@ export const spots = [
   {
     id: 42,
     name: "Queen of Hearts Cafe",
-    image: "/assets/pictures/imgQueenofHearts1.jpg",
+    image: [
+      "/assets/compressed/imgQueenofHearts1.webp",
+      "/assets/compressed/imgQueenofHearts2.webp",
+      "/assets/compressed/imgQueenofHearts3.webp"
+    ],
     altText: "Queen of Hearts",
     slug:"queen-of-hearts-cafe",
     description:"Artisan coffee bar & cafe with Italian style breakfast and lunch",
@@ -691,7 +844,11 @@ export const spots = [
   {
     id: 43,
     name: "Leovilla Mexican Restaurant",
-    image: "/assets/pictures/imgLeoVilla2.jpg",
+    image: [
+      "/assets/compressed/imgLeoVilla1.webp",
+      "/assets/compressed/imgLeoVilla2.webp",
+      "/assets/compressed/imgLeoVilla3.webp"
+    ],
     altText: "Leovilla",
     slug:"leovilla-mexican-restaurant",
     description:"Vibrant Mexican flavors for every day",
@@ -707,7 +864,11 @@ export const spots = [
   {
     id: 44,
     name: "The Kitchen",
-    image: "/assets/pictures/imgTheKitchen.jpg",
+    image: [
+      "/assets/compressed/imgTheKitchen1.webp",
+      "/assets/compressed/imgTheKitchen2.webp",
+      "/assets/compressed/imgTheKitchen3.webp"
+    ],
     altText: "The Kitchen",
     slug:"the-kitchen",
     description:"Modern restaurant with creative cocktails and dishes",
@@ -720,26 +881,15 @@ export const spots = [
     website:"none",
     menu:[],
   },
-  {
-    id: 45,
-    name: "Sorrel Restaurant and Lounge",
-    image: "/assets/pictures/imgSorrel2.jpg",
-    altText: "Sorrel Restaurant and Lounge",
-    slug:"sorrel-restaurant-and-lounge",
-    description:"Outdoor seating with fireplace, perfect for evenings",
-    rating: 4.6,
-    category:["Restaurant","Lounge","Bar"],
-    tags:["recommended","topRated","popular"],
-    address:"Harare CBD, Harare",
-    phone:"078 942 1489",
-    hours:["Mon-Sat: 8:00AM - 10:00PM","Weekends: 9:00AM - 11:00PM"],
-    website:"none",
-    menu:[],
-  },
+  
   {
     id: 46,
     name: "Salt Zimbabwe",
-    image: "/assets/pictures/imgSalt.jpg",
+    image: [
+      "/assets/compressed/imgSalt.jpg",
+      "/assets/compressed/imgSalt2.jpg",
+      "/assets/compressed/imgSalt3.jpg"
+    ],
     altText: "Salt Zimbabwe",
     slug:"salt-zimbabwe",
     description:"American classics & Mediterranean delights",
@@ -755,7 +905,11 @@ export const spots = [
   {
     id: 47,
     name: "ChopChopZim",
-    image: "/assets/pictures/imgChopChop1.jpg",
+    image: [
+      "/assets/compressed/imgChopChop1.webp",
+      "/assets/compressed/imgChopChop2.webp",
+      "/assets/compressed/imgChopChop3.webp"
+    ],
     altText: "ChopChopZim",
     slug:"chopchopzim",
     description:"Steakhouse with premium grills and drinks",
@@ -771,7 +925,11 @@ export const spots = [
   {
     id: 48,
     name: "HipHipSip Zimbabwe",
-    image: "/assets/pictures/imgHipHipSip2.jpg",
+    image: [
+      "/assets/compressed/imgHipHipSip1.webp",
+      "/assets/compressed/imgHipHipSip2.webp",
+      "/assets/compressed/imgHipHipSip3.webp"
+    ],
     altText: "HipHipSip Zimbabwe",
     slug:"hiphipsip-zimbabwe",
     description:"Every sip feels like a celebration with great drinks",
@@ -787,7 +945,11 @@ export const spots = [
   {
     id: 49,
     name: "Foodies",
-    image: "/assets/pictures/Foodies1.jpg",
+    image: [
+      "/assets/compressed/imgFoodies1.webp",
+      "/assets/compressed/imgFoodies2.webp",
+      "/assets/compressed/imgFoodies3.webp"
+    ],
     altText: "Foodies",
     slug:"foodies",
     description:"A unique dining experience with a focus on fresh ingredients",
@@ -803,10 +965,14 @@ export const spots = [
   {
     id: 49,
     name: "Mozambik Zimbabwe",
-    image: "/assets/pictures/Mozambik4.jpg",
+    image: [
+      "/assets/compressed/imgMozambik1.webp",
+      "/assets/compressed/imgMozambik2.webp",
+      "/assets/compressed/imgMozambik3.webp"
+    ],
     altText: "Mozambik",
     slug: "mozambik-zimbabwe",
-    description: "it’s all à la carte deliciousness!",
+    description: "it`s all à la carte deliciousness!",
     rating: 4.3,
     category: ["Restaurant", "Bar", "GrillHouse"],
     tags: ["recommended","topRated","popular"],
@@ -819,7 +985,11 @@ export const spots = [
   {
     id: 50,
     name: "Oh So Scrumptious Zimbabwe",
-    image: "/assets/pictures/imgOhSo1.jpg",
+    image: [
+      "/assets/compressed/imgOhSo1.webp",
+      "/assets/compressed/imgOhSo2.webp",
+      "/assets/compressed/imgOhSo3.webp"
+    ],
     altText: "Oh So Scrumptious Zimbabwe",
     slug: "oh-so-scrumptious-zimbabwe",
     description: "Oh so scrumptious",
@@ -835,7 +1005,11 @@ export const spots = [
   {
     id: 51,
     name: "Fishmonger harare",
-    image: "/assets/pictures/imgFishmonger1.jpg",
+    image: [
+      "/assets/compressed/imgFishmonger1.webp",
+      "/assets/compressed/imgFishmonger2.webp",
+      "/assets/compressed/imgFishmonger3.webp"
+    ],
     altText: "Fishmonger harare",
     slug: "fishmonger-harare",
     description:"Serving up your favourites with heart, warmth, and a whole lot of flavour. This is Fishmonger hospitality at its finest",
@@ -851,7 +1025,11 @@ export const spots = [
   {
     id: 52,
     name: "Subs and Mo",
-    image: " /assets/pictures/imgSubs3.jpg",
+    image: [
+      "/assets/compressed/imgSubs1.webp",
+      "/assets/compressed/imgSubs2.webp",
+      "/assets/compressed/imgSubs3.webp"
+    ],
     altText: "Subs and Mo",
     slug: "subs-and-mo",
     description: "Fresh & Tasty Sub Sandwiches🍔 n Mo On the Go Meals🧋Treats & Refreshments",
@@ -867,7 +1045,11 @@ export const spots = [
   {
     id: 53,
     name: " The Style Bar Cafe",
-    image: " /assets/pictures/imgStyleBar1.jpg",
+    image: [
+      "/assets/compressed/imgStyleBar1.webp",
+      "/assets/compressed/imgStyleBar2.webp",
+      "/assets/compressed/imgStyleBar3.webp"
+    ],
     altText: "The Style Bar Cafe",
     slug: "the-style-bar-cafe",
     description: "A chic Harare eatery",
@@ -883,10 +1065,14 @@ export const spots = [
   {
     id: 54,
     name: "Bean Tree Zimbabwe",
-    image: "/assets/pictures/imgBeanTree1.jpg",
+    image: [
+      "/assets/compressed/imgBeanTree1.webp",
+      "/assets/compressed/imgBeanTree2.webp",
+      "/assets/compressed/imgBeanTree3.webp"
+    ],
     altText: "Bean Tree Zimbabwe",
     slug: "bean-tree-zimbabwe",
-    description: "All things coffee’’ Restaurant, Serving All-day Breakfast, Coffee roasting services, Shakes,& Gelato!",
+    description: "All things coffee` Restaurant, Serving All-day Breakfast, Coffee roasting services, Shakes,& Gelato!",
     rating: 4.2,
     category: ["Cafe", "Coffee Shop"],
     tags: ["recommended", "trending"],
@@ -899,7 +1085,11 @@ export const spots = [
   {
     id: 55,
     name: "Afropolitan Restaurant Bar & Grill",
-    image: "/assets/pictures/imgAfropolitan.jpg",
+    image: [
+      "/assets/compressed/imgAfropolitan1.webp",
+      "/assets/compressed/imgAfropolitan2.webp",
+      "/assets/compressed/imgAfropolitan3.webp"
+    ],
     altText: "Afropolitan Restaurant Bar & Grill",
     slug: "afropolitan-restaurant-bar-grill",
     description: "A Multifunctional Restaurant, Bar and Grill for all Ages.",
@@ -915,7 +1105,11 @@ export const spots = [
   {
     id: 56,
     name: "The Brahman Gastro Pub",
-    image: "/assets/pictures/imgBraham1.jpg",
+    image: [
+      "/assets/compressed/imgBraham1.webp",
+      "/assets/compressed/imgBraham2.webp",
+      "/assets/compressed/imgBraham3.webp"
+    ],
     altText: "The Brahman Gastro Pub",
     slug: "the-brahman-gastro-pub",
     description: "English Gastropub in the heart of Harare",
@@ -931,7 +1125,11 @@ export const spots = [
   {
     id: 57,
     name: "Zaytoon ",
-    image: "/assets/pictures/imgZaytoon1.jpg",
+    image: [
+      "/assets/compressed/imgZaytoon1.webp",
+      "/assets/compressed/imgZaytoon2.webp",
+      "/assets/compressed/imgZaytoon3.webp"
+    ],
     altText: "Zaytoon",
     slug: "zaytoon",
     description: " Zaytoon is NOW OPEN! We can't wait to welcome you all and share our delicious food with you! ",
@@ -947,7 +1145,11 @@ export const spots = [
   {
     id: 58,
     name: "Miombo Mountain Lodge & Spa",
-    image: "/assets/pictures/imgMiombo1.jpg",
+    image: [
+      "/assets/compressed/imgMiombo1.webp",
+      "/assets/compressed/imgMiombo2.webp",
+      "/assets/compressed/imgMiombo3.webp"
+    ],
     altText: "Miombo Mountain Lodge & Spa",
     slug: "miombo-mountain-lodge-spa",
     description: "Located on the outskirts of Harare, immersed in nature 🍃",
@@ -963,10 +1165,14 @@ export const spots = [
   {
     id: 59,
     name: "Lunas Restaurant ",
-    image: "/assets/pictures/imgLuna.jpg",
+    image: [
+      "/assets/compressed/imgLuna1.webp",
+      "/assets/compressed/imgLuna2.webp",
+      "/assets/compressed/imgLuna3.webp"
+    ],
     altText: "Lunas Restaurant",
     slug: "lunas-restaurant",
-    description: "✨ Welcome to Luna’s Restaurant ✨ Your go-to spot in Harare for delicious food, warm vibes, and unforgettable moments. Whether you’re here for a cozy lunch, a dinner with friends, or just a coffee break — Luna’s is where great taste meets great atmosphere. 🌙",
+    description: "✨ Welcome to Luna`s Restaurant ✨ Your go-to spot in Harare for delicious food, warm vibes, and unforgettable moments. Whether you’re here for a cozy lunch, a dinner with friends, or just a coffee break — Luna’s is where great taste meets great atmosphere. 🌙",
     rating: 4.0,
     category: ["Restaurant", "Cafe"],
     tags: ["recommended", "trending"],
@@ -979,7 +1185,11 @@ export const spots = [
   {
     id: 60,
     name: "Shishawarma",
-    image: "/assets/pictures/imgShishawarma1.jpg",
+    image: [
+      "/assets/compressed/imgShishawarma1.webp",
+      "/assets/compressed/imgShishawarma2.webp",
+      "/assets/compressed/imgShishawarma3.webp"
+    ],
     altText: "Shishawarma",
     slug: "shishawarma",
     description: "Welcome to Shishawarma 🇱🇧❤️🇿🇼 We offer you all Lebanese fast food service",
@@ -995,7 +1205,11 @@ export const spots = [
   {
     id: 61,
     name: "THE HORSEBOX BAR",
-    image: "/assets/pictures/imgHorsebox2.jpg",
+    image: [
+      "/assets/compressed/imgHorsebox1.webp",
+      "/assets/compressed/imgHorsebox2.webp",
+      "/assets/compressed/imgHorsebox3.webp"
+    ],
     altText: "THE HORSEBOX BAR",
     slug: "the-horsebox-bar",
     description: "Craft Beer | Craft Gin | Boutique Wine Bar | Lovers of Festivals & All Things GIN ❤️",
@@ -1011,7 +1225,11 @@ export const spots = [
   {
     id: 62,
     name: "Smash`D",
-    image: "/assets/pictures/imgSmashD.jpg",
+    image: [
+      "/assets/compressed/imgSmashD1.webp",
+      "/assets/compressed/imgSmashD2.webp",
+      "/assets/compressed/imgSmashD3.webp"
+    ],
     altText: "Smash`D",
     slug: "smash-d",
     description: "Best Smash'd burgers in town 🍔🍟🍻 , 100% real ground beef\nIn-house secret sauces",

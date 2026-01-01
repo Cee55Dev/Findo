@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { spots } from "../data/SpotsData";
 import "./CategoryResults.css";
 
-function CategoryResults() {
+function CategoryResults({ image }) {
   const { categoryName } = useParams();
   const navigate = useNavigate();
 
@@ -23,10 +23,15 @@ function CategoryResults() {
               className="spot-card"
               onClick={() => navigate(`/spots/${spot.slug}`)} // use slug here
             >
-              <img src={spot.image} alt={spot.altText || spot.name} className="spot-image" />
+            <img 
+              src={Array.isArray(spot.image) ? spot.image[0] : image || "https://via.placeholder.com/200x140"}
+              className="spot-image" 
+
+             />
                 <h3 className="cat-spot-name">{spot.name}</h3>
                 <p className="cat-bio">
-                  {spot.description}</p>
+                  {spot.description}
+                </p>
               
               
             </div>

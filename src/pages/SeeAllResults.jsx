@@ -1,9 +1,9 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { spots } from "../data/SpotsData";
-import Card from "../components/Card";
+
 import "./SeeAllResults.css";
 
-function SeeAllResults() {
+function SeeAllResults({image, description}) {
     const { section } = useParams();
     const navigate = useNavigate ();
 
@@ -23,19 +23,24 @@ function SeeAllResults() {
             <h2 className="feed-title">{ section }</h2>
 
             <div className="spots-grid">
-             {data.map(item => (
+             {data.map(spot => (
                 <div 
-                key={item.id}
-                {...item}
+                key={spot.id}
+                {...spot}
                 className="spot-card"
                 layout = "vertical" 
-                onClick={() => navigate(`/spots/${item.slug}`)}
+                onClick={() => navigate(`/spots/${spot.slug}`)}
 
                 > 
-                   <img src={item.image} alt={item.altText || item.name} className="spot-image" />
-                    <h3 className="cat-spot-name">{item.name}</h3>
+                <img
+                    src={Array.isArray(spot.image) ? spot.image[0] : image || "https://via.placeholder.com/200x140"}
+                    alt={spot.altText || spot.name}
+                    className="spot-image"
+                />
+
+                    <h3 className="cat-spot-name">{spot.name}</h3>
                     <p className="cat-bio">
-                    {item.description}</p>   
+                    {spot.description}</p>   
                 </div>
                 ))}
             </div>

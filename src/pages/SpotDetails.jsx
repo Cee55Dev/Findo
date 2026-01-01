@@ -1,16 +1,14 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import { FaBookmark } from "react-icons/fa";
-import FollowButton from "../components/buttons/FollowButton";
 import Slider from "../components/Slider";
 import { spots } from "../data/SpotsData";
 import upcomingEvents from "../data/UpcomingEvents";
 import "./SpotDetails.css";
 import UpcomingEvents from "../components/UpComingEvents";
 import SaveButton from "../components/buttons/SaveButton";
-import { BsFillStarFill, BsPatchCheckFill } from "react-icons/bs";
-import { FiStar, FiInfo } from "react-icons/fi";
+import {FiInfo } from "react-icons/fi";
+import Sliderr from "../components/ImageSlider";
 import SpotDetailsTabs from "../components/spotDetailsTabs";
 import StarRating from "../components/stars";
 
@@ -51,7 +49,7 @@ function SpotDetails() {
       <div className="spot-details">
         {/* Image with back + save buttons */}
         <div className="spot-image-container">
-          <img src={spot.image} alt={spot.altText} className="spot-image" />
+          <Sliderr images={spot.image} altText={spot.altText} className="spot-image" />
           <button className="back-button" onClick={() => navigate(-1)}>
             Back
           </button>
