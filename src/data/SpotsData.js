@@ -246,7 +246,7 @@ export const spots = [
     image: [
       "/assets/compressed/imgSalt1.webp",
       "/assets/compressed/imgSalt2.webp",
-      "/assets/compressed/imgSalt3.webp"
+      "/assets/compressed/imgSalt3.webp",
     ],
     altText: "Salt Zimbabwe",
     slug:"salt-zimbabwe",
@@ -271,8 +271,8 @@ export const spots = [
     altText: "ChopChopZim",
     slug:"chopchopzim",
     description:"Steakhouse for the true carnivore",
-    rating: 4.7,
-    category:["Restaurant","GrillHouse","Cafe"],
+    rating: 4.3,
+    category:["Restaurant","GrillHouse","Cafe","Steakhouse"],
     tags:["recommended","topRated","popular"],
     address:"256 Herbet Chitepo Ave, Harare",
     phone: "077 918 9214",
@@ -470,7 +470,7 @@ export const spots = [
     ],
     altText: "Bistro Veldemeers",
     slug:"bistroveldemeers",
-    description:" talian Club",
+    description:" Italian Club",
     rating: 4.6,
     category:["Club","Bar" , "Pub" ,"Resturant" , "Chill"],
     tags:["recommended","topRated","popular"],
@@ -582,21 +582,21 @@ export const spots = [
   },
     {
     id: 29,
-    name: "The Smoke House",
+    name: "The Smoke House Vic Falls",
     image: [
       "/assets/compressed/imgSmokeHouse1.webp",
       "/assets/compressed/imgSmokeHouse2.webp",
       "/assets/compressed/imgSmokeHouse3.webp"
     ],
-    altText: "The Smoke House",
-    slug: "the-smoke-house",
-    description: "SMoke House 🔥🔥🔥",
+    altText: "The Smoke House Vic Falls",
+    slug: "the-smoke-house-vic-falls",
+    description: "Smoke House 🔥🔥🔥",
     rating: 4.2,
     category: ["Grill" , "Restaurant"],
-    tags: [""],
-    address: "",
-    phone: "",
-    hours: [""],
+    tags: ["recommended","popular"],
+    address: "Victoria Falls, Zimbabwe",
+    phone: "+263 77 123 4567",
+    hours: ["Sun - Thurs: 12pm - 10pm", "Fri - Sat: 12pm - 11pm"],
     website: "",
     menu: [],
   },
@@ -761,27 +761,6 @@ export const spots = [
     menu: [],
   },
   {
-    id: 38,
-    name: "The Fire Pit Lounge",
-    image: [
-      "/assets/compressed/imgFirePit1.webp",
-      "/assets/compressed/imgFirePit2.webp",
-      "/assets/compressed/imgFirePit3.webp"
-    ],
-    altText: "The Fire Pit Lounge",
-    slug:"the-fire-pit-lounge",
-    description:"Trendy lounge with excellent vibes and cocktails",
-    rating: 4.6,
-    category:["Bar","Restaurant","Lounge"],
-    tags:["recommended","topRated","trending"],
-    address:"Nelson Mandela Ave, Harare",
-    phone:"077 254 5687",
-    hours:"24 hours",
-    website:"none",
-    menu:[],
-  },
-  
-  {
     id: 40,
     name: "Jongwe Corner Bar",
     image: [
@@ -882,26 +861,6 @@ export const spots = [
     menu:[],
   },
   
-  {
-    id: 46,
-    name: "Salt Zimbabwe",
-    image: [
-      "/assets/compressed/imgSalt.jpg",
-      "/assets/compressed/imgSalt2.jpg",
-      "/assets/compressed/imgSalt3.jpg"
-    ],
-    altText: "Salt Zimbabwe",
-    slug:"salt-zimbabwe",
-    description:"American classics & Mediterranean delights",
-    rating: 4.5,
-    category:["Restaurant","Cafe","Lounge"],
-    tags:["recommended","topRated","trending"],
-    address:"Number 2 Kingsmead Road Lifestyle Center, Borrowdale, Harare, Zimbabwe",
-    phone:"078 942 1489",
-    hours:["Mon-Sat: 8:00AM - 10:00PM","Weekends: 9:00AM - 11:00PM"],
-    website:"none",
-    menu:[],
-  },
   {
     id: 47,
     name: "ChopChopZim",
@@ -1044,18 +1003,18 @@ export const spots = [
   },
   {
     id: 53,
-    name: " The Style Bar Cafe",
+    name:"Style Bar Cafe",
     image: [
       "/assets/compressed/imgStyleBar1.webp",
       "/assets/compressed/imgStyleBar2.webp",
       "/assets/compressed/imgStyleBar3.webp"
     ],
-    altText: "The Style Bar Cafe",
-    slug: "the-style-bar-cafe",
+    altText: "Style Bar Cafe",
+    slug: "style-bar-cafe",
     description: "A chic Harare eatery",
     rating: 4.5,
-    category: ["Cafe", "Bar"],
-    tags: ["recommended", "trending"],
+    category: ["Cafe", "Bar" ," Chill"],
+    tags: ["recommended", "trending", "topRated"],
     address: "123 Trendy Avenue, Harare, Zimbabwe",
     phone: "(078) 765-4321",
     hours: ["Mon-Sat: 2:00PM - 5:00PM"],
@@ -1224,17 +1183,17 @@ export const spots = [
   },
   {
     id: 62,
-    name: "Smash`D",
+    name: "Smash D",
     image: [
       "/assets/compressed/imgSmashD1.webp",
       "/assets/compressed/imgSmashD2.webp",
       "/assets/compressed/imgSmashD3.webp"
     ],
-    altText: "Smash`D",
+    altText: "Smash D",
     slug: "smash-d",
     description: "Best Smash'd burgers in town 🍔🍟🍻 , 100% real ground beef\nIn-house secret sauces",
     rating: 4.5,
-    category: ["Bar", "Live Music"],
+    category: ["Restaurant", "Live Music"],
     tags: ["recommended", "trending"],
     address: "Shop 8,Paddington Square, Lewisham OR Cnr Glenara&Samora Machel, Eastlea, Harare, Zimbabwe",
     phone: "0777 099 051",
@@ -1242,6 +1201,239 @@ export const spots = [
     website: "",
     menu: ["Burgers| Crispy Chicken| Shakes"]
   },
+
+
+
+  // Newly Added SPots //
+
+  {
+    id: 63,
+    name: "The Jungle Gym",
+    image: [
+      "/assets/compressed/imgJungleGym1.webp",
+      "/assets/compressed/imgJungleGym2.webp",
+      "/assets/compressed/imgJungleGym3.webp"
+    ],
+    altText: "Jungle Gym",
+    slug: "the-jungle-gym",
+    description: "An open-air approach to training. Boutique commercial gym in Harare. Purposeful coaching • Memberships capped by design",
+    rating: 4.5,
+    category: ["Gym", "Personal Training", "Membership" , "Physical Fitness Center"],
+    tags: ["recommended", "trending"],
+    address: "Hunters Moon Estate, Highlands, Harare, Zimbabwe",
+    phone: "0779038820",
+    hours: ["Weekdays: 5:00AM - 7:00PM"],
+    website: "www.thejungle-gym.com",
+    menu: []
+
+  },
+
+  {
+    id: 64,
+    name: "Bally Vaughan And Mwanga Lodge ",
+    image: [
+      "/assets/compressed/imgBally1.webp",
+      "/assets/compressed/imgBally2.webp",
+      "/assets/compressed/imgBally3.webp"
+    ],
+    altText: "Bally Vaughan & Mwanga Lodge",
+    slug: "bally-vaughan-mwanga-lodge",
+    description: "🌲Wildlife Sanctuary & Lodge || 45 mins from Harare Animals . Game drives . Day trips . Overnight .For Families & Nature Lovers",
+    rating: 4.2,
+    category: ["Resort", "Lodge", "Widlife","Game drives", "Nature"],
+    tags: ["recommended", "topRated"],
+    address: "Highlands,Harare,Zimbabwe",
+    phone: " 0772 300 935 OR 0772 226 854",
+    hours: [""],
+    website: "www.ballyvaughan.co.zw",
+    menu: []
+  },
+
+  {
+    id: 65,
+    name: "Opal Dental Clinic ",
+    image: [
+      "/assets/compressed/imgOpal1.webp",
+      "/assets/compressed/imgOpal2.webp",
+      "/assets/compressed/imgOpal3.webp"
+    ],
+    altText: "Opal Dental Clinic",
+    slug: "opal-dental-clinic",
+    description: "Harare CBD Dentist",
+    rating: 4.2,
+    category: ["Clinic"],
+    tags: ["recommended", "topRated"],
+    address: "117-119 Rotten Row Harare Zimbabwe",
+    phone: "+263784141486",
+    hours: [],
+    website: "",
+    menu: []
+    
+  },
+  {
+   id: 66,
+   name: "Studio S Beauty Bar ",
+   image: [
+      "/assets/compressed/imgStudioS1.webp",
+      "/assets/compressed/imgStudioS2.webp",
+      "/assets/compressed/imgStudioS3.webp"
+    ],
+    altText: "Studio S beauty Bar",
+    slug: "studio-s-beauty-bar",
+    description: "Award Winning Skin Correction Specialist and Laser Bar , Semi-permanent makeup . bow sculpting . body therapyy . nails",
+    rating: 4.7,
+    category: ["Salon", "Beauty" , "Specialist" , "Body Therapy"],
+    tags: ["recommended", "topRated"],
+    address: "2 Kingsmead Road Lifestyle Centre, Harare, Zimbabwe",
+    phone: "263775268694",
+    hours: ["Weekdays: 5:00AM - 7:00PM"],
+    website: "",
+    menu: []
+    },
+
+    {
+    id: 67,
+    name: "Moo Ka Thai cafe",
+    image: [
+      "/assets/compressed/imgMoo1.webp",
+      "/assets/compressed/imgMoo2.webp",
+      "/assets/compressed/imgMoo3.webp"
+    ],
+    altText: "Moo Ka Thai Cafe",
+    slug: "moo-ka-thai-cafe",
+    description: "Asian STyle Cafe , Asian inspired Cakes | Boba Tea by Bubble Bee",
+    rating: 4.2,
+    category: ["Cafe" , "Restuarant" , "Thai"],
+    tags: ["recommended", "topRated"],
+    address: "6 Chelmsford Road Belgravia, Harare, Zimbabwe",
+    phone: "0786280607",
+    hours: ["Tues-Thursday : 08:30 - 17:30 , Fri-Sat : 11:30 - 20:00"],
+    website: "",
+    menu: []
+  },
+
+  {
+    id: 68,
+    name: "The Courtyard Restaurant and Bar",
+    image: [
+      "/assets/compressed/imgCourtyard1.webp",
+      "/assets/compressed/imgCourtyard2.webp",
+      "/assets/compressed/imgCourtyard3.webp"
+    ],
+    altText: "The Courtyard Restaurant and Bar",
+    slug: "the-courtyard-restaurant-and-bar",
+    description: "Elevating your dining experience with a touch of sophistication",
+    rating: 4.2,
+    category: ["Restuarant" , "Bar"],
+    tags: ["trending", "topRated"],
+    address: "1 Grosvernor Road ,Harare, Zimbabwe",
+    phone: "",
+    hours: ["Mon-Sun(8:30AM - 10:00pm"],
+    website: "www.courtyard.co.zw",
+    menu: []
+  },
+  {
+    id: 69,
+    name: "Flames Zim",
+    image: [
+      "/assets/compressed/imgFlames1.webp",
+      "/assets/compressed/imgFlames2.webp",
+      "/assets/compressed/imgFlames3.webp"
+    ],
+    altText: "Flames Zim",
+    slug: "flames-zim",
+    description: "Halaal Certified",
+    rating: 4.2,
+    category: ["Restaurant" ,"Halaal"],
+    tags: ["recommended", "topRated"],
+    address: "211 A1 (Second Street extension),Harare",
+    phone: "+263785000123",
+    hours: ["11am - 9pm"],
+    website: "",
+    menu: []
+  },
+  {
+    id: 70,
+    name: "B caff zw",
+    image: [
+      "/assets/compressed/imgCaff1.webp",
+      "/assets/compressed/imgCaff2.webp",
+      "/assets/compressed/imgCaff3.webp"
+    ],
+    altText: "B Caff Zw",
+    slug: "b-caff-zw",
+    description: "Serving Workington and Ridgeviewwith love",
+    rating: 4.0,
+    category: ["Cafe" , "Restuarant"],
+    tags: ["recommended", "topRated"],
+    address: "Bhola Workington, 6662A Coventry Rd, Harare,Zimbabwe",
+    phone: "",
+    hours: ["Mon-Fri (8:00Am - 5pm , Sat: 8AM - 3PM"],
+    website: "",
+    menu: ["milkshakes | steak | macon & cheese"]
+  },
+  {
+    id: 71,
+    name: "Evitro Lounge and Bar",
+    image: [
+      "/assets/compressed/imgEvitro1.webp",
+      "/assets/compressed/imgEvitro2.webp",
+      "/assets/compressed/imgEvitro3.webp"
+    ],
+    altText: "EVitro Lounge and Bar",
+    slug: "Evitro-lounge-and-bar",
+    description: "EUPHORIC | ECSTATIC | VIBES",
+    rating: 4.2,
+    category: ["Lounge" , "Bar" , "Vibes"],
+    tags: ["recommended", "topRated"],
+    address: "",
+    phone: "+263773453278",
+    hours: ["Open Wednesday - Sunday | 8pm till late"],
+    website: "",
+    menu: []
+  },
+  {
+    id: 72,
+    name: "Gentleman`s Barber",
+    image: [
+      "/assets/compressed/imgGentleman1.webp",
+      "/assets/compressed/imgGentleman2.webp",
+      "/assets/compressed/imgGentleman3.webp"
+    ],
+    altText: "Gentleman's Barber",
+    slug: "gentlemans-barber",
+    description: "Multiple award winning barbershop",
+    rating: 4.2,
+    category: ["Beauty" , "Salon" , "Personal Care" , "Barber"],
+    tags: ["recommended", "topRated"],
+    address: "41 Churchhill Avenue, Alexandra Park || 27 Lanark road Avondale",
+    phone: "",
+    hours: ["8:00Am - 6:00pm"],
+    website: "",
+    menu: []
+  },
+  {
+    id: 73,
+    name: "CafeParisZw",
+    image: [
+      "/assets/compressed/imgParis1.webp",
+      "/assets/compressed/imgParis2.webp",
+      "/assets/compressed/imgParis3.webp"
+    ],
+    altText: "CafeParisZw",
+    slug: "cafepariszw",
+    description: "A little bit of Paris 🇫🇷 in Harare 🇿🇼",
+    rating: 4.2,
+    category: ["Cafe" , "Breakfast" , "Lunch" , "Coffee"],
+    tags: ["recommended", "topRated"],
+    address: "47 Churchhill Avenue, Harare , Zimbabwe",
+    phone: "",
+    hours: ["8:00Am - 6:00pm"],
+    website: "cafedeparisharare.com",
+    menu: ["French | Pastries | Coffee | Breakfast" ]
+  }
+
+
   
 ];
 

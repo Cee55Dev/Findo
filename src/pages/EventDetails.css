@@ -1,98 +1,171 @@
-.event-details{
-    position: fixed;
-    height:90vh;
-    display:flex;
+/* Container for the fullscreen event page */
+.event-details {
+    width: 100vw;
+    height: 100vh;         /* full viewport height */
+    position: relative;
+    display: flex;
     flex-direction: column;
 }
-.event-info{
-    display:flex;
-    flex-direction: row;
-    
+
+/* Image wrapper for absolute buttons */
+.event-image-wrapper {
+    position: relative;    /* required for absolute positioning of buttons */
+    width: 100%;
+    height: 100%;
 }
-.event-image{
-    object-fit: cover;
-    width:100%;
+
+/* Fullscreen image */
+.event-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* cover the entire viewport */
+   display: block;
+}
+
+/* Info icon top-right */
+.info-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #050505;
+    border: none;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+}
+
+.info-btn:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+/* Buy Tickets button overlay */
+.buy-ticket-overlay {
+    position: absolute;
+    bottom: 40px;           /* distance from bottom */
+    left: 50%;              /* center horizontally */
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.buy-ticket-overlay button {
+    padding: 15px 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: none;
+    background: rgba(21, 140, 200, 0.9);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.buy-ticket-overlay button:hover {
+    transform: translateY(-3px);
+    background: rgba(15, 120, 180, 0.95);
+}
+
+/* Overlay panel for event details */
+.event-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 100vh;
-}
-.event-content{
-    padding:10px;
-    background-color: rgb(27, 30, 30);
-    fill-opacity: 70%;
-    margin:0;
+    background: rgba(0,0,0,0.7);
     display: flex;
     justify-content: center;
-    align-items:flex-start;
-    align-content: center;
-    position: absolute;
-    gap:10px;
-    top:20%;
-    color:rgb(220, 228, 223);
-    font-size:1.5rem;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* Event content inside overlay */
+.event-content {
+    background-color: rgb(27, 30, 30);
+    padding: 2rem;
+    border-radius: 12px;
+    color: rgb(220, 228, 223);
+    max-width: 500px;
+    width: 90%;
+    display: flex;
     flex-direction: column;
-}
-.event-content h1 , p  {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    margin: 0;
-}
-.buy-ticket{
-    position: absolute;
-    font-weight:600;
-    left:50%;
-    top:70%;
-    width:200px;
-    color:White;
-    font-size:1rem;
-    padding:20px;
-    background: rgb(21, 140, 200);
-    border-radius: 20px;
-    border:none;
-}
-.event-details {
-  position: relative;
+    gap: 1rem;
+    position: relative;
+    box-sizing: border-box;
 }
 
-.event-info {
-  position: relative;
-}
-
-.info-btn {
-  position: absolute;
-  top: 60px;
-  right:10px; /* adjust so it doesn’t overlap Buy Tickets button */
-  background: rgba(221, 218, 218, 0.6);
-  color: #050505;
-  border: none;
-  border-radius: 50%;
-  padding: 20px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
-}
-.close-btn{
+/* Close button in overlay */
+.close-btn {
     position: absolute;
-    top:2px;
-    right:2px;
-    background:none;
-    border:none;
-    color:rgb(243, 240, 240);
-}
-.event-name{
-    color:white;
-    font-size: 2rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 800;
-}
-.event-datee{
-    color:rgb(76, 76, 82)
-}
-.event-date{
-    color:white;
-}
-.event-description{
-    margin-top: 10px;
-    color:white;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #fff;
     font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Event text */
+.event-name {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+}
+
+.event-datee {
+    color: rgb(150, 150, 150);
+    font-weight: 600;
+}
+
+.event-date {
+    color: white;
+}
+
+.event-description {
+    margin-top: 10px;
+    color: white;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6); /* readable over bright images */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .buy-ticket-overlay button {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+
+    .event-description {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .buy-ticket-overlay button {
+        width: 140px;
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+
+    .event-name {
+        font-size: 1.6rem;
+    }
+
+    .event-description {
+        font-size: 1rem;
+    }
+}
+.event-info{
+    height:90vh;
 }

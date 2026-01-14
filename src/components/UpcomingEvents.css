@@ -1,5 +1,8 @@
 
 .Upcoming-Events .slider-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap:0rem;
     width:100%;
     margin:0;

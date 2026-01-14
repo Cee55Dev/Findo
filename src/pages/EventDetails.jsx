@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { FiX, FiInfo } from "react-icons/fi";
 import upcomingEvents from "../data/UpcomingEvents";
+import BuyTicketButton from "../components/buttons/BuyTickets"; // reusable button
 import "./EventDetails.css";
 
 function EventDetails() {
@@ -14,26 +15,32 @@ function EventDetails() {
 
   return (
     <div className="event-details">
+      {/* Event Image + Buttons */}
       <div className="event-info">
-        <img
-          src={event.image}
-          alt={event.name}
-          className="event-image"
-        />
+        <div className="event-image-wrapper">
+          <img
+            src={event.image}
+            alt={event.name}
+            className="event-image"
+          />
 
-        {/* Info Icon */}
-        <button
-          className="info-btn"
-          onClick={() => setOpen(true)}
-          aria-label="More info"
-        >
-          <FiInfo size={20} />
-        </button>
+          {/* Info Icon */}
+          <button
+            className="info-btn"
+            onClick={() => setOpen(true)}
+            aria-label="More info"
+          >
+            <FiInfo size={20} />
+          </button>
 
-        <button className="buy-ticket">Buy Tickets +</button>
+          {/* Buy Tickets button overlay */}
+          <div className="buy-ticket-overlay">
+            <BuyTicketButton comingSoon={true} />
+          </div>
+        </div>
       </div>
 
-      {/* Info Panel */}
+      {/* Info Panel Overlay */}
       {open && (
         <div className="event-overlay" onClick={() => setOpen(false)}>
           <div className="event-content" onClick={(e) => e.stopPropagation()}>
@@ -42,7 +49,9 @@ function EventDetails() {
             </button>
 
             <h1 className="event-name">{event.name}</h1>
-            <p className="event-date"><span className="event-datee">Date:</span>{event.date}</p>
+            <p className="event-date">
+              <span className="event-datee">Date:</span> {event.date}
+            </p>
             <p className="event-description">{event.description}</p>
           </div>
         </div>

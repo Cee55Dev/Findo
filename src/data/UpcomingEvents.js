@@ -16,7 +16,7 @@ const upcomingEvents = [
     spotSlug: "clubzone", // The Q Bar
     name: "Traditional Friday",
     slug: "traditional-friday",
-    image: "/assets/pictures/eventClubZone.jpg",
+    image: "/assets/pictures/imgCultureThursday.jpg",
     altText: "Traditional Friday",
     date: "2025-12-05",
     description: "Live music and drinks at ClubZone",
@@ -24,26 +24,16 @@ const upcomingEvents = [
   },
   {
     id: 2,
-    spotSlug: "leovilla", // Tin Roof Bucket Bar and Bistro
-    name: "Food Festival",
-    slug:"food-festival",
-    image: "/assets/pictures/eventHKD.jpg",
-    altText: "Food Festival",
+    spotSlug: "harare-gardens", // Tin Roof Bucket Bar and Bistro
+    name: "Sunshine Festival",
+    slug:"sunshine-festival",
+    image: "/assets/pictures/imgEventSunshineFestival.jpg",
+    altText: "Sunshine Festival",
     date: "2025-12-10",
-    description: "Tasting various cuisines at Tin Roof Bucket Bar",
+    description: "ah Prayzah ACTIVATED SUNSHINE CITY FESTIVAL 2026 🗓️ May 23-25 📍 Harare Gardens 🎵 3 STAGES, 3 LINEUPS, 3 EPIC DAYS ELECTRONIC 1st PHASE ADVANCE TICKETS NOW AVAILABLE ⚠️ LIMITED TICKETS AVAILABLE DUE TO VENUE CAPACITY! Ticket PRICES : 1. Chillzone stage : $10 all day access 2. Main Stage : $20 all day access",
     type: "event"
   },
-  {
-    id: 3,
-    spotSlug: "leovilla", // The Social House
-    name: "Cocktail Evening",
-    slug: "cocktail-evening",
-    image: "/assets/pictures/Event1.jpg",
-    altText: "Cocktail Evening",
-    date: "2025-12-15",
-    description: "Enjoy a selection of cocktails at The Social House",
-    type: "event"
-  }
+  
 ];
 
 export default upcomingEvents;
