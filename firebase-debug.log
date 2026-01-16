@@ -1,0 +1,25 @@
+[debug] [2026-01-14T15:23:00.253Z] ----------------------------------------------------------------------
+[debug] [2026-01-14T15:23:00.256Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\CraigTafadzwaChikepe\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-01-14T15:23:00.257Z] CLI Version:   15.1.0
+[debug] [2026-01-14T15:23:00.257Z] Platform:      win32
+[debug] [2026-01-14T15:23:00.257Z] Node Version:  v24.11.0
+[debug] [2026-01-14T15:23:00.257Z] Time:          Wed Jan 14 2026 17:23:00 GMT+0200 (Central Africa Time)
+[debug] [2026-01-14T15:23:00.257Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-14T15:23:02.356Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-14T15:23:02.357Z] > authorizing via signed-in user (tafadzwcraig@gmail.com)
+[debug] [2026-01-14T15:23:02.357Z] [iam] checking project findoapp for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-01-14T15:23:02.358Z] Checked if tokens are valid: true, expires at: 1768407595072
+[debug] [2026-01-14T15:23:02.358Z] Checked if tokens are valid: true, expires at: 1768407595072
+[debug] [2026-01-14T15:23:02.359Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/findoapp:testIamPermissions [none]
+[debug] [2026-01-14T15:23:02.359Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/findoapp:testIamPermissions x-goog-quota-user=projects/findoapp
+[debug] [2026-01-14T15:23:02.359Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/findoapp:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-14T15:23:02.537Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects/findoapp:testIamPermissions, {"headers":{},"method":"POST","body":"{\"permissions\":[\"firebase.projects.get\",\"firebasehosting.sites.update\"]}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects/findoapp:testIamPermissions failed, reason: certificate has expired
+[debug] [2026-01-14T15:23:02.538Z] [iam] error while checking permissions, command may fail: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/findoapp:testIamPermissions
+[debug] [2026-01-14T15:23:02.539Z] Checked if tokens are valid: true, expires at: 1768407595072
+[debug] [2026-01-14T15:23:02.539Z] Checked if tokens are valid: true, expires at: 1768407595072
+[debug] [2026-01-14T15:23:02.539Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/findoapp [none]
+[debug] [2026-01-14T15:23:02.952Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/findoapp, {"headers":{},"method":"GET","signal":{"reason":""}}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/findoapp failed, reason: certificate has expired
+[debug] [2026-01-14T15:23:02.952Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/findoapp (original: request to https://firebase.googleapis.com/v1beta1/projects/findoapp failed, reason: certificate has expired)
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
